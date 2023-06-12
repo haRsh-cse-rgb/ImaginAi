@@ -16,7 +16,7 @@
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
     "mongoose": "^7.2.3",
-    "openai": "^3.2.1",
+    "openai": "^3.2.1"
    
   },
   "engines": {
