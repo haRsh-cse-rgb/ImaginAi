@@ -28,7 +28,7 @@ const CreatePost = () => {
         if (form.prompt && form.photo) {
           setLoading(true);
           try {
-            const response = await fetch('http://localhost:8000/api/v1/post', {
+            const response = await fetch('https://imaginai-9zxj.onrender.com/api/v1/post', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ const CreatePost = () => {
         if (form.prompt) {
             try {
                 setGeneratingImg(true);
-                const response = await fetch("http://localhost:8000/api/v1/imaginai", {
+                const response = await fetch("https://imaginai-9zxj.onrender.com/api/v1/imaginai", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

@@ -5,7 +5,7 @@ import connectDB from './mongodb/connect.js';
 
 
 import postRoutes from './routes/postRoutes.js'
-import imaginAiroutes from './routes/imaginAiroutes.js';
+import imaginAi from './routes/imaginAi.js'
 
 
 dotenv.config();
@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json({limit : '50mb'}));
 
 app.use('/api/v1/post' , postRoutes)
-app.use('/api/v1/imaginai' , imaginAiroutes)
+app.use('/api/v1/imaginai' , imaginAi)
 
 app.get('/' , async(req, res) => {
     res.send("Hellow World");
